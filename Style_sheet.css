@@ -1,0 +1,226 @@
+:root{
+    --main-font : "Big Shoulders Stencil",Khmer OS Battambang;
+    --orange : rgba(255, 166, 0, 0.975);
+    --white : #fff;
+    --black : #000;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    background:linear-gradient(360deg,var(--orange), transparent);
+    text-shadow: 2px 2px 3px white;
+    font-family:var(--main-font);
+    overflow-x: hidden;
+}
+
+.container-form {
+    position: relative;
+    border-radius: 5px;
+    padding: 1rem;
+    background: white; /* Background color of the form */
+    transition: all 0.8s;
+} 
+
+.container-form::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, rgb(255, 94, 0), rgb(255, 213, 0));
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.header_item{
+    text-align:center;
+    font-size: 25pt;
+    pointer-events: none;
+    font-weight: 700;
+}
+.container_body{
+    margin-top: 30px;
+}
+.block-all-input{
+    padding-bottom:8px;
+}
+.block-all-input label{font-size:11pt;font-weight: bold;}
+.block-all-input input[type="text"]{
+    border: none; 
+    outline: none;
+    background: linear-gradient(to right, orange, transparent);
+    transition:all 0.8s;
+    caret-color: yellow;
+}
+.block-all-input input:focus{
+    background: linear-gradient(to left, orange, transparent);color:black;
+    transition-duration: .6s;
+}
+
+.block-all-input select{
+    outline:none;
+    border-top: none; border-left: none;
+    background: linear-gradient(to right, orange, transparent);
+    color: white;
+}
+.block-all-input  option{background-color: orange;}
+#checkbox{
+    accent-color:orange;
+    width:16px;height:16px;
+}
+.block-all-input input[type="submit"]{
+    width:100%;
+    background: linear-gradient(to left, gold, transparent);
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    margin-top: 10px;
+    text-align: center;
+    transition:all 0.7s;
+    font-size: 12pt;
+    font-weight: 700;
+}
+.block-all-input input[type="submit"]:hover{
+    background-color:rgb(238, 89, 4);
+    color:whitesmoke;
+    transition-duration: 0.4s;
+}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top,transparent,gold);
+}
+
+.write-by{
+    position: fixed;
+    right:0;bottom: 10;
+    padding: 5px;
+    font-size: 1.5rem;
+    writing-mode: sideways-lr;
+    font-weight: bolder;
+}
+
+.btn-show:hover{
+    background-color: orange;
+}
+
+@media screen and (max-width:768px){
+    body{
+        background-color: rgb(255, 237, 70);
+    }
+    .header_item{
+        text-shadow: 2px 2px 4px rgb(244, 255, 85);
+    }
+    .block-all-input input[type="text"]{
+        background: linear-gradient(to right, orange,white);
+    }
+    .write-by{
+        text-shadow: none;
+        color:#fff;
+    }
+}
+@media screen and (max-width:480px){
+    .write-by{
+        font-size: 1rem;
+        color:#000;
+    }
+}
+
+
+/* Style load Css*/
+/* From Uiverse.io by alexruix */ 
+.loader {
+    --cell-size: 180px;
+    --cell-spacing: 1px;
+    --cells: 3;
+    --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--total-size);
+    height: var(--total-size);
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .cell {
+    flex: 0 0 var(--cell-size);
+    margin: var(--cell-spacing);
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+    animation: 1.6s ripple ease infinite;
+  }
+  
+  .cell.d-1 {
+    animation-delay: 100ms;
+  }
+  
+  .cell.d-2 {
+    animation-delay: 200ms;
+  }
+  
+  .cell.d-3 {
+    animation-delay: 300ms;
+  }
+  
+  .cell.d-4 {
+    animation-delay: 400ms;
+  }
+  
+  .cell:nth-child(1) {
+    --cell-color: #FF7F00;
+}
+
+.cell:nth-child(2) {
+    --cell-color: #FF8510;
+}
+
+.cell:nth-child(3) {
+    --cell-color: #FF8C20;
+}
+
+.cell:nth-child(4) {
+    --cell-color: #FF9430;
+}
+
+.cell:nth-child(5) {
+    --cell-color: #FF9D40;
+}
+
+.cell:nth-child(6) {
+    --cell-color: #FFA650;
+}
+
+.cell:nth-child(7) {
+    --cell-color: #FFAE60;
+}
+
+.cell:nth-child(8) {
+    --cell-color: #FFB770;
+}
+
+.cell:nth-child(9) {
+    --cell-color: #FFC080;
+}
+
+/* Animation */
+@keyframes ripple {
+    0% {
+        background-color: transparent;
+    }
+
+    30% {
+        background-color: var(--cell-color);
+    }
+
+    60% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
