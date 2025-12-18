@@ -13,6 +13,8 @@ body{
     text-shadow: 2px 2px 3px white;
     font-family:var(--main-font);
     overflow-x: hidden;
+    overflow-y:auto;
+    padding: 0; margin:0;
 }
 
 .container-form {
@@ -21,6 +23,7 @@ body{
     padding: 1rem;
     background: white; /* Background color of the form */
     transition: all 0.8s;
+    margin: 10px;
 } 
 
 .container-form::before {
@@ -88,7 +91,7 @@ body{
     color:whitesmoke;
     transition-duration: 0.4s;
 }
-::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-thumb{
     border-radius: 5px;
     background: linear-gradient(to top,transparent,gold);
@@ -102,6 +105,9 @@ body{
     writing-mode: sideways-lr;
     font-weight: bolder;
 }
+ .write-by-sm{
+    display: none;
+ }
 
 .btn-show:hover{
     background-color: orange;
@@ -109,7 +115,7 @@ body{
 
 @media screen and (max-width:768px){
     body{
-        background-color: rgb(255, 237, 70);
+        margin-block:3rem;
     }
     .header_item{
         text-shadow: 2px 2px 4px rgb(244, 255, 85);
@@ -118,14 +124,12 @@ body{
         background: linear-gradient(to right, orange,white);
     }
     .write-by{
-        text-shadow: none;
-        color:#fff;
+        display:none;
     }
-}
-@media screen and (max-width:480px){
-    .write-by{
-        font-size: 1rem;
-        color:#000;
+    .write-by-sm{
+        font-size: 1.5rem;
+        text-align: center;
+        display: block;
     }
 }
 
@@ -141,9 +145,12 @@ body{
     flex-wrap: wrap;
     width: var(--total-size);
     height: var(--total-size);
-    position: absolute;
+    
+    /* THE FIX: Use fixed positioning to keep it stuck to the screen */
+    position: fixed; 
     z-index: -1;
-  }
+
+}
   
   .cell {
     flex: 0 0 var(--cell-size);

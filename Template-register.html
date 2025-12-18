@@ -24,6 +24,7 @@
 </head>
 <body>
 
+    
     <!-- From Uiverse.io by alexruix --> 
     <div class="loader">
         <div class="cell d-0"></div>
@@ -39,93 +40,96 @@
         <div class="cell d-3"></div>
         <div class="cell d-4"></div>
     </div>
-
-    <div class="container-form">
-
-        <div class="card" style="border-inline: none;border-top:none">
-                <div class="header_item">Regrister</div>
-        </div>
-
-        <div class="container_body">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="block-all-input">
-                            <label for="firstname">First Name:</label>
-                        <input class="form-control" type="text" name="firstname" id="" placeholder="Your firstname" required>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="block-all-input">
-                        <label for="secondname">Second Name:</label>
-                        <input class="form-control" type="text" name="secondtname" id="" placeholder="Your seondname" required>
-                    </div>
-                </div>
+    
+    <div>
+        <div class="container-form">
+    
+            <div class="card" style="border-inline: none;border-top:none">
+                    <div class="header_item">Regrister</div>
             </div>
-
-            <div class="block-all-input">
-                <label for="gender">Gender:</label>
-                <select class="form-select" name="gender" id="">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="block-all-input">
-                        <label for="password">Password:</label>
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="password" id="password" placeholder="Your password" required>
-                            <button class="btn border btn-show" type="button" id="togglePassword">
-                                <i class="fa-solid fa-eye-slash"></i>
-                            </button>
+    
+            <div class="container_body">
+                <div class="row">
+                    <div class="col-lg-6 col-6 col-sm-6">
+                        <div class="block-all-input">
+                                <label for="firstname">First Name:</label>
+                            <input class="form-control" type="text" name="firstname" id="" placeholder="Your firstname" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-6 col-sm-6">
+                        <div class="block-all-input">
+                            <label for="secondname">Second Name:</label>
+                            <input class="form-control" type="text" name="secondtname" id="" placeholder="Your seondname" required>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="block-all-input">
-                        <label for="comfirm password">Comfirm Password:</label>
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="comfirmpassword" id="comfirmpassword" placeholder="Your Comfirm password" required>
-                            <button class="btn border btn-show" type="button" id="togglePassword-1">
-                                <i class="fa-solid fa-eye-slash"></i>
-                            </button>
+    
+                <div class="block-all-input">
+                    <label for="gender">Gender:</label>
+                    <select class="form-select" name="gender" id="">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="block-all-input">
+                            <label for="password">Password:</label>
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="password" id="password" placeholder="Your password" required>
+                                <button class="btn border btn-show" type="button" id="togglePassword">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="block-all-input">
+                            <label for="comfirm password">Comfirm Password:</label>
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="comfirmpassword" id="comfirmpassword" placeholder="Your Comfirm password" required>
+                                <button class="btn border btn-show" type="button" id="togglePassword-1">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="block-all-input">
+                    <label for="phone">Phone number:</label>
+                    <input class="form-control" type="text" name="phonnumber" id="" placeholder="Your phonenumber (+885)" required>
+                </div>
+                
+                <div class="block-all-input">
+                    <label for="email">Email:</label>
+                    <input  class="form-control"type="text" name="email" id="" placeholder="Your email" required>
+                </div>
+    
+                <div class="form-group block-all-input">
+                    <button class="btn btn-lg btn-light w-100 fs-6">
+                        <img src="image/google.png" style="width:20px;" class="me-2">
+                        <small>Sign In with Google</small>
+                    </button>
+                </div>
+    
+                <div class="from-check d-flex justify-content-start">
+                    <input class="form-check" type="checkbox" name="" id="checkbox">
+                    <label class="form-check-label mx-2" for="flexCheckDefault" for="Remember me">Remember me</label>
+                </div>
+    
+                <div class="form-group text-center">
+                    <small>Already have an Account? <a href="index.html">Login</a></small>
+                </div>
+    
+                <div class="block-all-input">
+                    <input type="submit" name="submit" id="" class="btn" value="Regrister">
+                </div>
             </div>
             
-            <div class="block-all-input">
-                <label for="phone">Phone number:</label>
-                <input class="form-control" type="text" name="phonnumber" id="" placeholder="Your phonenumber (+885)" required>
-            </div>
-            
-            <div class="block-all-input">
-                <label for="email">Email:</label>
-                <input  class="form-control"type="text" name="email" id="" placeholder="Your email" required>
-            </div>
-
-            <div class="form-group block-all-input">
-                <button class="btn btn-lg btn-light w-100 fs-6">
-                    <img src="image/google.png" style="width:20px;" class="me-2">
-                    <small>Sign In with Google</small>
-                </button>
-            </div>
-
-            <div class="from-check d-flex justify-content-start">
-                <input class="form-check" type="checkbox" name="" id="checkbox">
-                <label class="form-check-label mx-2" for="flexCheckDefault" for="Remember me">Remember me</label>
-            </div>
-
-            <div class="form-group text-center">
-                <small>Already have an Account? <a href="index.html">Login</a></small>
-            </div>
-
-            <div class="block-all-input">
-                <input type="submit" name="submit" id="" class="btn" value="Regrister">
-            </div>
         </div>
-        
+        <div class="write-by-sm">Write By Mr. Hong</div>
     </div>
 
     <div class="write-by">Write By Mr. Hong</div>
