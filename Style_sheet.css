@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'BigShouldersStencil';
+    src: url('fonts/BigShouldersStencil-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 :root{
-    --main-font : "Big Shoulders Stencil",Khmer OS Battambang;
+    --main-font : 'BigShouldersStencil',Khmer OS Battambang;
     --orange : rgba(255, 166, 0, 0.975);
     --white : #fff;
     --black : #000;
@@ -14,7 +22,6 @@ body{
     font-family:var(--main-font);
     overflow-x: hidden;
     overflow-y:auto;
-    padding: 0; margin:0;
 }
 
 .container-form {
@@ -23,7 +30,7 @@ body{
     padding: 1rem;
     background: white; /* Background color of the form */
     transition: all 0.8s;
-    margin: 10px;
+    margin-inline: 1rem;
 } 
 
 .container-form::before {
